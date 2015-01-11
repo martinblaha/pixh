@@ -14,7 +14,8 @@ puts "pix ... just a little photo management helper"
 puts "SOURCE = #{root_dir}"
 puts "DEST   = #{dest_dir}"
 
-system 'touch', 'pix.log'
+logfile = Time.now.strftime("%Y-%m-%d-%H-%M-%S-pix" + ".log")
+system 'touch', logfile
 
 # procdir returns a list of images starting recursively from dir
 def procdir(dir)
