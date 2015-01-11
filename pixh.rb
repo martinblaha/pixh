@@ -58,13 +58,13 @@ file_list.each do |item|
           puts "Date corrupt: " + item
           # append to log
           errors_count += 1
-          File.open("pix.log", "a+"){|f| f.puts "Date corrupt: " + item }
+          File.open(logfile, "a+"){|f| f.puts "Date corrupt: " + item }
         end
     else
       puts "Date missing: " + item
       # append to log
       errors_count += 1
-      File.open("pix.log", "a+"){|f| f.puts "Date missing: " + item }
+      File.open(logfile, "a+"){|f| f.puts "Date missing: " + item }
   end
   # puts(item + ' => ' + new_file_name)
   count+=1
@@ -74,4 +74,4 @@ finish = Time.now
 seconds = sprintf("%0.02f", (finish - start) % 60)
 minutes = (((finish - start) / 60) % 60).to_i
 puts "#{count} files processed in #{minutes} min #{seconds} sec"
-puts "#{errors_count} errors. See pix.log file in this directory." unless errors_count == 0
+puts "#{errors_count} errors. See the pixh log file in this directory." unless errors_count == 0
