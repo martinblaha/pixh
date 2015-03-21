@@ -1,5 +1,7 @@
 ## About
 
+[![Join the chat at https://gitter.im/martinblaha/pixh](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/martinblaha/pixh?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A little photo management helper in Ruby.
 
 For now, it just takes a directory with your images and sorts out contained photos according to the date when they got shot. If a file doesn't contain EXIF or contains wrong EXIF information, it's being ignored, new log entry created (pixd.log in the source directory).
