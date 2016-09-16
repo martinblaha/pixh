@@ -1,0 +1,12 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    gli (2.13.0)
+    mini_exiftool (2.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gli
+  mini_exiftool

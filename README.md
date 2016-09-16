@@ -12,8 +12,12 @@ a) automatic sync of pictures from my Smartphones and Tablets (by using BitTorre
 
 b) Sorting out picutres from a) into a time line folder structure (/year/month/day). While sorting out the program also renames the files so they are sortable by time taken
 
+#### Supported file extensions
 
-  pixd SOURCE DESTINATION
+* Images jpeg,jpg,JPG,JPEG,png,PNG,raw,RAW,TIFF,tiff,TIF,tif,BMP,bmp,DIVX,divx
+* Movies mov,MOV,mpeg,MPEG,mpg,MPG,mp4,MP4,avi,AVI,m4v,M4V
+
+´´´pixd SOURCE DESTINATION´´´
 
 #### Example
 
@@ -24,4 +28,3 @@ pixd . /mnt/myhdd/martin/pictures/library
 
 * provide option to remove files from SOURCE (when successfuly copied)
 * provide option to put problematic files to "Karantene" folder
-* include movies, not only photographs
